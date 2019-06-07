@@ -1,4 +1,9 @@
+require 'pry'
+
 def count_elements(array)
-  # code goes here
+  hash = {}
+  array.map do |item|
+    hash[item] = array.count(item)
+  end
+  hash
 end
- 
